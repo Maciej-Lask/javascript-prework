@@ -1,4 +1,4 @@
-let computerMove = `kamieÒ`;
-let playerMove = 'papier'
-printMessage('Zagra≥em ' + computerMove + '! Jeúli TwÛj ruch to papier, to wygrywasz!');
-printMessage('Zagra≥em ' + playerMove + '! Wygrywam!');
+let computerMove = `kamie≈Ñ`;
+let playerMove = 'papier';
+printMessage('Zagra≈Çem ' + computerMove + '! Je≈õli Tw√≥j ruch to papier, to wygrywasz!');
+printMessage('Zagra≈Çem ' + playerMove + '! Wygrywam!');

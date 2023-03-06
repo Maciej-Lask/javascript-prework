@@ -44,8 +44,3 @@ if (playerMove == 'kamień' && computerMove == 'papier') {
 } else {
     printMessage('Nieznany wynik!');
 }
-
-let computerMove = `kamień`;
-let playerMove = 'papier';
-printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to papier, to wygrywasz!');
-printMessage('Zagrałem ' + playerMove + '! Wygrywam!');

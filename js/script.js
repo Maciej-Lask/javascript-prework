@@ -1,4 +1,4 @@
-﻿let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 console.log('Gracz wpisał: ' + playerInput);
 let playerMove = 'nieznany ruch';
 
@@ -44,3 +44,8 @@ if (playerMove == 'kamień' && computerMove == 'papier') {
 } else {
     printMessage('Nieznany wynik!');
 }
+
+let computerMove = `kamień`;
+let playerMove = 'papier';
+printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to papier, to wygrywasz!');
+printMessage('Zagrałem ' + playerMove + '! Wygrywam!');

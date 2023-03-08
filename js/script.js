@@ -27,17 +27,13 @@ if (randomNumber == 1) {
 }
 printMessage('Mój ruch to: ' + computerMove);
 
-if (playerMove == 'kamień' && computerMove == 'papier') {
+if ((playerMove == 'kamień' && computerMove == 'papier') ||
+    (playerMove == 'papier' && computerMove == 'nożyce') ||
+    (playerMove == 'nożyce' && computerMove == 'kamień')) {
     printMessage('Przegrałeś!');
-} else if (playerMove == 'papier' && computerMove == 'nożyce') {
-    printMessage('Przegrałeś!');
-} else if (playerMove == 'nożyce' && computerMove == 'kamień') {
-    printMessage('Przegrałeś!');
-} else if (playerMove == 'kamień' && computerMove == 'nożyce') {
-    printMessage('Wygrałeś!');
-} else if (playerMove == 'papier' && computerMove == 'kamień') {
-    printMessage('Wygrałeś!');
-} else if (playerMove == 'nożyce' && computerMove == 'papier') {
+} else if ((playerMove == 'kamień' && computerMove == 'nożyce') ||
+    (playerMove == 'papier' && computerMove == 'kamień') ||
+    (playerMove == 'nożyce' && computerMove == 'papier')) {
     printMessage('Wygrałeś!');
 } else if (playerMove == computerMove) {
     printMessage('Remis!');

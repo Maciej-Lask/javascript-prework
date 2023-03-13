@@ -1,29 +1,30 @@
-function playGame(playerInput) {
-    clearMessages();
-    let playerMove = getMoveName(playerInput);
+{
+    function playGame(playerInput) {
+        clearMessages();
+        const playerMove = getMoveName(playerInput);
 
-    printMessage('Twój ruch to: ' + playerMove);
+        printMessage('Twój ruch to: ' + playerMove);
 
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
-    console.log('Wylosowana liczba to: ' + randomNumber);
+        const randomNumber = Math.floor(Math.random() * 3 + 1);
 
-    let computerMove = getMoveName(randomNumber);
+        console.log('Wylosowana liczba to: ' + randomNumber);
 
-    printMessage('Mój ruch to: ' + computerMove);
+        const computerMove = getMoveName(randomNumber);
 
-    displayResult(playerMove, computerMove);
+        printMessage('Mój ruch to: ' + computerMove);
+
+        displayResult(playerMove, computerMove);
+    }
+
+    document.getElementById('play-rock').addEventListener('click', function () {
+        playGame(1);
+    });
+
+    document.getElementById('play-paper').addEventListener('click', function () {
+        playGame(2);
+    });
+
+    document.getElementById('play-scissors').addEventListener('click', function () {
+        playGame(3);
+    });
 }
-
-let isTimeoutActive = false;
-
-document.getElementById('play-rock').addEventListener('click', function () {
-    playGame(1);
-});
-
-document.getElementById('play-paper').addEventListener('click', function () {
-    playGame(2);
-});
-
-document.getElementById('play-scissors').addEventListener('click', function () {
-    playGame(3);
-});
